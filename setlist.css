@@ -1,0 +1,427 @@
+﻿/* SHARED CLASSES BETWEEN VIEWBOXES */ 
+
+
+#outer-wrapper {
+	width: 960px;
+	margin: auto;
+	margin-bottom: 1em;
+	}
+
+.wrapper { 
+	margin: 1em 1% 3%;
+	width: 48%;
+	float: right;
+}
+
+.viewbox {
+	min-height: 2em;
+	border: 1px solid gray;
+	border-radius: 0 0 4px 4px;
+	margin-top: .65em;
+	width: 99.8%;
+	}
+
+.header {
+	width: 100%;
+	font-weight: bold;
+	height: 3.5em;
+}
+
+.header h3 {
+	height: 40%;
+	margin: 0 0 .5em 0;
+	padding-left: .75em;
+	}
+
+.header a {
+	text-decoration: none;
+	border: none;
+	/*
+	 position: relative;
+	top: .3em;
+	*/
+	background: none;
+	}
+
+	.header a img {
+		border: none;
+		}
+
+.header .toolbar {
+	width: 99.5%;
+	text-align: left;
+	border-radius: 4px 4px 0 0;
+	background: #eee;
+	border: 1px solid gray;
+	height: 60%;
+}
+
+
+#setlist-wrapper {
+	}
+
+
+#songs {
+	/* 
+	 width: 47%;
+	 */
+	}
+
+#set {
+	border-radius: 0;
+	border-bottom: 1px solid #999;
+	}
+
+/*
+#song-header {
+	margin-top: 1.5em;
+	margin-left: 1em;
+}
+
+
+#setlist-header {
+	margin-top: -5px;
+	margin-right: 15%;
+	width: 35%;
+	float: right;
+}
+	*/
+
+#setchooser {
+	display: inline;
+	}
+
+#setlist-header a {
+	}
+
+/* MODAL DIALOG STUFF */
+
+
+.ui-widget {
+	font-size: .9em;
+}
+
+#newsetform {
+	font-size: .9em;
+	padding-top: 1.1em;
+	}
+
+.md {
+	margin-bottom: 1em;
+	margin-right: 1em;
+}
+
+.date,.type {
+	width: 42%;
+	float: left;
+}
+
+.md input,select {
+	display: block;
+}
+
+.name input {
+	width: 83%;
+}
+
+.date input {
+	width: 10em;
+}
+
+
+/*
+.modal label {
+	display: block;
+	}
+
+.modal input {
+	display: block;
+	margin-bottom: 1em;
+	}
+*/
+
+.ui-dialog .ui-dialog-buttonpane button {
+	font-size: .8em;
+	}
+
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: none;
+}
+
+
+#setupdater {
+	margin-bottom: 0;
+}
+
+
+/* SONG STYLES */
+
+.viewbox ul {
+	margin: 0;
+	padding: 0;
+	}
+
+.viewbox li {
+	display: block;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	font-size: .9em;
+	padding: .2em 1em;
+	background: #D9E8F7;
+	}
+
+.viewbox li:hover {
+	background: #DBDEEB;
+	}
+
+#set li {
+	cursor: move;
+	}
+
+.viewbox li {
+	overflow: hidden;
+	}
+
+.songname {
+}
+
+
+/* ICONS FOR SONGS */ 
+
+.icon {
+	height: 1.3em;
+}
+
+.songtools a {
+	text-decoration: none;
+	border: 0;
+	background: none;
+}
+
+.songtools a img,.songtools span img {
+	border: 0;
+	vertical-align: text-bottom;
+}
+
+.songname,.songtools,.songtop {
+	display: inline-block;
+}
+
+.songtools {
+	float: right;
+}
+
+.songtools span {
+	cursor: pointer;
+}
+
+/* on desktop */
+.songmobiletools {
+	display: none;
+}
+
+span.key.ui-button  {
+	border: 1px solid #999;
+	padding: 0 .2em;
+	background: -moz-linear-gradient(top,#aaadf2 0%,#4444ab);
+	background: -webkit-linear-gradient(top,#aaadf2 0%,#4444ab);
+	color: white;
+	font-size: .85em;
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+/* differences between viewboxes */
+#songs .songmobiletools {
+	display: none;
+}
+
+#songs .songdesktools {
+	display: inline-block;
+}
+
+#songs .key, #songs .remove  {
+	display: none;
+}
+
+#set .add {
+	display: none;
+}
+
+#set .ui-button-text-only .ui-button-text {
+	padding: .05em;
+}
+
+
+/* old styles 
+	
+.key,.icon {
+	height: 1.3em;
+	cursor: pointer;
+	}
+
+.icon-span {
+	display: inline-block;
+	float: right;
+	width: 1em;
+	margin: 0 2%;
+	cursor: pointer;
+}
+
+.key {
+	font-weight: bold;
+	border: 0;
+	}
+
+.key.ui-button-text-only .ui-button-text {
+	padding: 0;
+	}
+
+*/
+
+
+/* FOOTER */
+
+#footer {
+	width: 100%;
+	height: 2.5em;
+	padding: .6em 0;
+	/* change this to something lovely */
+	border: 1px solid gray;
+	border-top: 0;
+	background: #ccc;
+	text-align: center;
+	border-radius: 0 0 4px 4px;
+	}
+
+#footer .button {
+font-size: 12px;
+	margin: 0 .5em;
+	display: inline-block;
+	padding: .75em 2em;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	background: -moz-linear-gradient(
+		top,
+		#aaadf2 0%,
+		#4444ab);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#aaadf2),
+		to(#4444ab));
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #333333;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,0.7);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,0.7);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+	}
+
+#footer .button img {
+	height: 1.7em;
+	}
+
+
+
+/* mobile styles -------------- */
+
+/* screen width */
+@media only screen and (orientation: portrait) and (max-device-width : 800px) {
+
+	body {
+		width: 400px;
+	}
+
+	#outer-wrapper {
+		width: 320px;
+		}
+
+}
+
+
+@media only screen and (orientation : landscape) and (max-device-width : 800px) {
+
+	body {
+		text-align: left;
+		margin: 1em;
+		width: 800px;
+	}
+
+	#outer-wrapper {
+		width: 720px;
+		}
+
+}
+
+@media only screen and (max-device-width : 800px) {
+
+	.wrapper {
+		clear: both;
+		width: 95%;
+		}
+
+	.header h3 {
+		padding-left: 0;
+		}
+
+	select {
+		font-size: .85em;
+		width: 80%;
+		}
+
+	#setlist-wrapper {
+		}
+
+
+} /* end screen width */
+
+/* touch support */
+
+	.touch .songtop {
+		width: 100%;
+		overflow: hidden;
+	}
+
+
+	/* icons for songs */
+		.touch .songmobiletools {
+			display: inline-block;
+			float: right;
+		}
+	
+		.touch .songdesktools {
+			display: none;
+		}   
+
+		.touch #set .songdesktools.show {
+			display: block;
+			border-top: 1px dotted gray;
+			width: 100%;
+			text-align: right;
+			padding-top: .5em;
+		}
+
+	.touch .viewbox li:hover {
+		background: #D9E8F7;
+	}
+
+	.touch .viewbox li:active {
+		background: #DBDEEB;
+	}
+
+	/* end touch support */
+
+
+/* end mobile styles*/

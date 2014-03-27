@@ -1,0 +1,26 @@
+#footer .button {
+	display: block;
+	float: left;
+	padding: 0px 6%;
+	border-left: 1px solid #888;
+	border-right: 1px solid #ccc;
+	margin: 0;
+}
+
+#footer .button:first-child {
+	//how are you gonna handle this?
+}
+
+#footer .button:last-child {
+	//how are you gonna handle this?
+}
+
+/* remove background and other borders, border radius, etc */
+
+#footer {
+	border: 1px solid gray;
+	// consider bringing that blue background here 
+}
+
+
+
