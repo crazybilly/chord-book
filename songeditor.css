@@ -1,0 +1,121 @@
+#songeditor {
+	margin: auto;
+	width: 420px;
+	}
+
+form {
+	display: inline;
+}
+
+fieldset {
+	border: 1px dashed #aabbee;
+	}
+
+
+#songinfo legend {
+	font-weight: bold;
+	font-size: 1.8em;
+	color: #CCC;
+	}
+
+
+label.key {
+	}
+
+input {
+	border-radius: 0 0 4px 4px;
+	}
+
+input, select {
+	margin-right: .5em;
+}
+
+input.name {
+	width: 21em;
+	padding: .3em;
+	margin-bottom: .85em;
+	font-weight: bold;
+	}
+
+input.key {
+	width: 2em;
+	}
+
+#temposet{
+	display: inline-block;
+	text-align: left;
+	padding-left: 0;
+	width: 63%;
+	}
+
+label.tempo {
+	margin-left: 1em;
+}
+
+input.tempo {
+	width: 2em;
+}
+
+div.caption {
+	display: inline-block;
+	font-family: Tahoma, sans;
+	font-size: .65em;
+	vertical-align: bottom;
+	margin-left: .5em;
+	color: #2222ff;
+}
+
+
+#instruments {
+	font-size: .9em;
+	border-bottom: 0;
+	}
+
+#instruments legend {
+	color: #CCC;
+	font-size: 1.25em;
+	font-weight: bold;
+	}
+
+#instruments select {
+	margin: 0.3em 0.75em 0.75em 0.3em;
+	width: 10em; 
+	}
+
+input.harmonica {
+	vertical-align: middle;
+	}
+
+label.onemic {
+	margin-left: 4.3em;
+	}
+
+.submit-container {
+	margin: 0;
+	background: #c0c0ff;
+	padding: .3em;
+	text-align: center;
+	}
+
+	input.submit {
+		margin-top: 0;
+	}
+		
+#bottom-submit {
+	border-radius: 0 0 4px 4px;
+	}
+
+textarea.chords {
+	margin: 0;
+	border-top: 0;
+	border-bottom: 0;
+	display: block;
+	background: #F2F2FC;
+	border-left: 1px dashed #aabbee;
+	border-right: 1px dashed #aabbee;
+	padding: 1em;
+	width: 100%;
+	box-shadow: 1px 1px 11px 1px #cdcdcd inset;
+	}
+
+

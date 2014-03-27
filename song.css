@@ -1,0 +1,220 @@
+.tools {
+	position: absolute;
+	text-align: center;
+	top: 10px;
+	left: 10px;
+	z-index: 8;
+	width: 3.3em;
+	font-family: sans;
+}
+
+
+	#trans {
+		width: 3.2em;
+		padding: .2em 0px;
+		margin-bottom: .4em;
+		text-align: center;
+	}
+
+		#trans a {
+			padding: .8em;
+			width:  1.5em;
+			border-top: 1px solid gray;
+			display: block;
+		}
+
+		#trans a:first-child {
+			border-top: 0;
+		}
+		
+
+	.key {
+		width: 2.5em;
+		margin-top: .8em;
+		display: block;
+		height: 1.6em;
+	}
+
+		.key.button {
+			height: 1.5em;
+			}
+
+		.keysub {
+			position: absolute;
+			left: 4em;
+			top: 13.3em;
+			width: 3.2em;
+			}
+
+		.keysub a {
+			display: inline-block;
+			padding: .5em 0;
+			border-bottom: 1px solid gray;
+			width: 2em;
+			}
+
+		 .key .keysub a:hover, .keysub a:active {
+			background: white;
+			opacity: .5;
+			color: black;
+			}
+
+	.gear {
+		position: relative;
+		right: .4em;
+		margin-top: .8em;
+		margin-bottom: .8em;
+	}
+	
+		/* img */
+		#open-options {
+		}
+		
+		/* div */	
+		#options {
+			position: relative;
+			top: -8em;
+			left: 4em;
+			padding: 15px;
+			background: #fbfbfb;
+			width: 8em;
+		}
+
+			/* img */
+			#reset-icon {
+				margin-left: 1.5em;
+			}
+
+.icon {
+	width: 24px;
+	padding: 0px .4em;
+}
+
+.button {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding: 5px 1px;
+	background: -moz-linear-gradient(
+		top,
+		#aaadf2 0%,
+		#4444ab);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#aaadf2),
+		to(#4444ab));
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border: 1px solid #333333;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,0.7);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,0.7);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.button:hover {
+}
+
+.button:active {	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,0.7);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,0.7);
+
+}
+
+.button a, .button a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+.hidden {
+	display: none;
+	}
+
+.overlay {
+	z-index: 10;
+	background: white;
+	padding: 1.5em;
+	border: 1px solid #cdcdcd;
+	margin-top: 1em;
+	font-size: .9em;
+	border-radius: 7px;
+	-moz-box-shadow:
+		-2px 3px 10px rgba(000,000,000,0.6),
+		inset 0px 0px 2px rgba(255,255,255,0.7);
+	-webkit-box-shadow:
+		-2px 3px 10px rgba(000,000,000,0.6),
+		inset 0px 0px 2px rgba(255,255,255,0.7);
+
+}
+
+.overlay div {
+	margin-bottom: .5em;
+}
+
+/* not working correctly; should be per http://nicolasgallagher.com/pure-css-speech-bubbles/demo/default.css */
+
+/*
+.overlay:after {
+	content:"";
+	position:absolute;
+	border-width: 10px 50px 10px 0px ;
+	top:52px;
+	bottom:auto;
+	left:-30px;
+	border-style:solid;
+	border-color:#ddd transparent;
+    	display:block; 
+    	width:0;
+	z-index: -1;
+}
+*/
+
+/* ------------ nav styles ------------ */
+
+.nav {
+	position: absolute;
+	top: 17.6em;
+	left: 7px;
+	z-index: 8;
+	width: 36px;
+	padding: 4px;
+	background: #eee;
+	border: 1px solid gray;
+	border-radius: 7px;
+	text-align: center;
+	}
+
+.nav img {
+	margin: .3em 0;
+	width: 24px;
+}	
+
+.nav .placeholder {
+	height: 24px;
+	width: 45px;
+	display: inline-block;
+	}
+
+@media print {
+     .tools,.nav {
+            display: none;
+      }
+
+	  .ft2 {
+	  	display: inline-block;
+		margin-bottom: 4pt;
+
+	
+}

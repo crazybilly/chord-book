@@ -1,0 +1,35 @@
+@page {
+	size: landscape;
+}
+
+#wrapper {
+	padding-top: .25cm;
+}
+
+@media only screen {
+	#wrapper {
+		height: 16.31cm;
+		margin: 0 auto;
+		width: 22.66cm;
+		border: 1px solid black;
+		padding: 1.25cm 2.64cm;
+		box-shadow: 5px 5px 5px #888;
+	}
+}
+
+
+ul {
+	list-style-type: none;
+	}
+
+li {
+	font-size: 1.4em;
+	font-weight: bold;
+	font-family: Georgia,serif;
+	list-style-image: none;
+	line-height: 1.5;
+	}
+
+#right {
+	float: right;
+}

@@ -1,0 +1,82 @@
+#outer-wrapper #footer .button {
+	display: inline;
+	}
+
+#footer .button img {
+	position: relative;
+	top: .5em;
+	}
+
+
+#setlist-wrapper {
+	width: 50%;
+	margin: 1em auto;
+	float: left;
+	}
+
+.songtop {
+	width: 22em;
+	padding-top: .2em;
+	}
+
+#set li {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#set .songtools {
+	float: none;
+	border-right: 1px solid #CCCCCC;
+	width: 7em;
+	}
+
+.tempo {
+	display: none;
+	}
+
+#set .onemic {
+	background: #bbb;
+	}
+
+#set .harmonica {
+	border: 2px dotted #B97237;
+	}
+
+#chart-div {
+	width: 40%;
+	height: 12em;
+	z-index: -10;
+	position: fixed;
+	top: 7em;
+	left: 38em;
+	box-shadow: 4px 3px 15px #999999
+	}
+
+
+@media only screen /*and (orientation: portrait) */ and (max-device-width : 800px) {
+
+	.touch #outer-wrapper {
+		margin-left: .2em;
+		width: 60%;
+	}
+
+	.touch #viewbox {
+		border-right: 0;
+	}
+
+	.touch #outer-wrapper #setlist-wrapper {
+		width: 100%;
+	}
+
+	#outer-wrapper #chart-div {
+		display: none;
+		}
+
+	#outer-wrapper #footer {
+		text-align: left;
+	}
+
+	#outer-wrapper #footer .button {
+		padding: .75em;
+		}
+}
