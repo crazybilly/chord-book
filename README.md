@@ -4,7 +4,7 @@ A decent way to get chord charts on a laptop, computer or phone. The chord book 
 
 It also has a drag-and-drop setlist builder with support for different instruments and a visual look at songs' energy levels throughout the set. 
 
-Crazybilly's Chord Book was written by Jake Tolbert (http://jaket.is-a-geek.com/blog) and is licesned under the GPL v2 or later.
+Crazybilly's Chord Book was written by [Jake Tolbert](http://jaket.zapto.org/blog) and is licesned under the GPL v2 or later.
 
 ## INSTALLATION
 
@@ -16,7 +16,7 @@ So here's how I'd install it:
 
 0. Install chordii and pdftohtml 
 1. Create a directory named "chord" off the root of your http directory.
-2. Drop all the files there.
+2. Drop all the files there. Make sure that all the files and directories are writable by the web server.
 3. Create a mySQL database called chord and use chord.sql to populate it.
 4. Edit db.php, entering the credentials for your new database
 5. Visit yourserver/chord in a web browser and go to town.
