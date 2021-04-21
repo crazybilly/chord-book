@@ -14,7 +14,7 @@ There's no fancy installer, and I can't remember whether or not I hard-coded it 
 
 So here's how I'd install it:
 
-0. Install chordii and pdftohtml 
+0. Install chordii, ps2pdf and pdftohtml 
 1. Create a directory named "chord" off the root of your http directory.
 2. Drop all the files there. Make sure that all the files and directories are writable by the web server.
 3. Create a mySQL database called chord and use chord.sql to populate it.
